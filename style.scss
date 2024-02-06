@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+}
+
+.head {
+    height: 1024px;
+    background-image: url(./img/fonup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top {
+    padding-left: 120px;
+
+    &_title {
+        color: white;
+        font-size: 64px;
+        font-weight: 700;
+        padding-top: 217px;
+    }
+
+    &_text {
+        max-width: 481px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+
+    &_link {
+        text-decoration-line: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration-line: underline
+        }
+    }
+
+    &_button {
+        width: 234px;
+        height: 48px;
+        background: #9C0332;
+        border: none;
+        border-radius: 30px;
+
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.gamescontent {
+    height: 556px;
+    background-image: url(./img/fondown.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.games {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 128px;
+
+    &_item {
+        height: 300px;
+        grid-column: span 4;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: white;
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        transition: all .3s;
+    }
+
+    &_item_1 {
+        background-image: url(./img/game1.jpg);
+    }
+
+    &_item_2 {
+        background-image: url(./img/game2.jpg);
+    }
+
+    &_item_3 {
+        background-image: url(./img/game3.jpg);
+    }
+}
