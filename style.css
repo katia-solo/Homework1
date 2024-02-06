@@ -74,32 +74,31 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .games {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
-  padding-top: 128px;
-  padding-bottom: 128px;
   padding-left: 120px;
 }
 .games_item {
-  height: 300px;
-  grid-column: span 4;
-  display: grid;
-  justify-items: center;
-  align-items: center;
   position: relative;
 }
 .games_img {
-  border-radius: 18px;
+  border-radius: 19px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0231);
+  width: 100%;
+  height: auto;
   transition: all 0.3s;
 }
 .games_img:hover {
   transform: scale(1.05);
   box-sizing: border-box;
-  border-radius: 18px;
+  border-radius: 19px;
   border: 3px solid rgb(68, 210, 255);
   cursor: url(./img/cursor.png) 2 2, pointer;
 }
