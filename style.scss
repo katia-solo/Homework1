@@ -14,8 +14,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 720px);
-    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 .head {
@@ -27,7 +27,6 @@ body {
 }
 
 .top {
-    padding-left: 120px;
 
     &_title {
         color: white;
@@ -92,8 +91,6 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 32px;
-
-    padding-left: 120px;
 
     &_item {
         // height: 300px;

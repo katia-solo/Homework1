@@ -14,8 +14,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .head {
@@ -26,9 +26,6 @@ body {
   background-size: cover;
 }
 
-.top {
-  padding-left: 120px;
-}
 .top_title {
   color: white;
   font-size: 64px;
@@ -83,7 +80,6 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 32px;
-  padding-left: 120px;
 }
 .games_item {
   position: relative;
