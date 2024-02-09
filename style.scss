@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.head {
+    height: 1024px;
+    background-image: url(./img/fonup.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.top {
+
+    &_title {
+        color: white;
+        font-size: 64px;
+        font-weight: 700;
+        padding-top: 217px;
+    }
+
+    &_text {
+        max-width: 481px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+
+    &_link {
+        text-decoration-line: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+        &:hover {
+            text-decoration-line: underline
+        }
+    }
+
+    &_button {
+        width: 234px;
+        height: 48px;
+        background: #9C0332;
+        border: none;
+        border-radius: 30px;
+
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+
+        transition: all .3s;
+    }
+
+    &_button:hover {
+        background: rgb(235, 68, 63);
+        cursor: url(./img/cursor.png) 2 2, pointer
+    }
+}
+
+.gamescontent {
+    height: 556px;
+    background-image: url(./img/fondown.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 32px;
+
+    &_item {
+        // height: 300px;
+        position: relative;
+    }
+
+    &_img {
+        border-radius: 19px;
+        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0231);
+        width: 100%;
+        height: auto;
+
+        transition: all .3s;
+    }
+
+    &_img:hover {
+        transform: scale(1.05);
+        box-sizing: border-box;
+        border-radius: 19px;
+        border: 3px solid rgb(68, 210, 255);
+        cursor: url(./img/cursor.png) 2 2, pointer
+    }
+
+    &_name {
+        color: white;
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+    }
+}
