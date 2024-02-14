@@ -8,3 +8,7 @@ alert(a);
 const yearFirstIphone = 2007;
 alert(yearFirstIphone);
 
+// ----------------Task 3-------------------
+const jsCreatorName = 'Брендан Эйх';
+alert(jsCreatorName);
+
