@@ -12,3 +12,9 @@ alert(yearFirstIphone);
 const jsCreatorName = 'Брендан Эйх';
 alert(jsCreatorName);
 
+// ----------------Task 4-------------------
+let b = 10;
+let c = 2;
+alert([b+c, b-c, b * c, b/c ]);
+
+
