@@ -15,7 +15,7 @@ alert(jsCreatorName);
 // ----------------Task 4-------------------
 a = 10;
 b = 2;
-alert([a + b, a - b, a * b, a/b ]);
+alert([a + b, a - b, a * b, a / b]);
 
 // ----------------Task 5-------------------
 let result = 2 ** 5;
@@ -40,8 +40,26 @@ alert(num);
 let age = Number(prompt('Сколько вам лет?'));
 let lastDigit = age % 10;
 let lastTwoDigits = age % 100;
-if (lastDigit === 1 && lastTwoDigits !== 11) { alert(`Вам ${age} год `);
-} else if ( lastDigit >= 2 && lastDigit <= 4 && ( lastTwoDigits < 10 || lastTwoDigits >= 20) ) { alert(`Вам ${age} года `);   
+if (lastDigit === 1 && lastTwoDigits !== 11) {
+    alert(`Вам ${age} год `);
+} else if (lastDigit >= 2 && lastDigit <= 4 && (lastTwoDigits < 10 || lastTwoDigits >= 20)) {
+    alert(`Вам ${age} года `);
 } else { alert(`Вам ${age} лет `); };
 
+// ----------------Task 9-------------------
+
+let user = {
+    name: 'Kate',
+    age: 21,
+    isAdmin: true
+}
+// -----------9.1-----------------
+user['city of residence'] = 'Riga';
+// -----------9.2-----------------
+user.age = 38;
+// -----------9.3-----------------
+delete user['city of residence'];
+// -----------9.4-----------------
+let info = prompt('Какую информацию хотите узнать о пользователе?');
+alert(user[info]);
 
