@@ -4,3 +4,7 @@ alert(a);
 a = 20;
 alert(a);
 
+// ----------------Task 2-------------------
+const yearFirstIphone = 2007;
+alert(yearFirstIphone);
+
