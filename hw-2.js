@@ -13,9 +13,9 @@ const jsCreatorName = 'Брендан Эйх';
 alert(jsCreatorName);
 
 // ----------------Task 4-------------------
-let b = 10;
-let c = 2;
-alert([b+c, b-c, b * c, b/c ]);
+a = 10;
+b = 2;
+alert([a + b, a - b, a * b, a/b ]);
 
 // ----------------Task 5-------------------
 let result = Number;
@@ -23,7 +23,16 @@ result = 2 ** 5;
 alert(result);
 
 // ----------------Task 6-------------------
-let d = 9;
-let e = 2;
-alert(`Остаток от деления = ${d % e}`);
+a = 9;
+b = 2;
+alert(`Остаток от деления = ${a % b}`);
 
+// ----------------Task 7-------------------
+let num = 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num++;
+num--;
+alert(num);
