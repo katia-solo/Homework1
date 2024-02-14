@@ -17,4 +17,7 @@ let b = 10;
 let c = 2;
 alert([b+c, b-c, b * c, b/c ]);
 
-
+// ----------------Task 5-------------------
+let result = Number;
+result = 2 ** 5;
+alert(result);
