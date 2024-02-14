@@ -21,3 +21,9 @@ alert([b+c, b-c, b * c, b/c ]);
 let result = Number;
 result = 2 ** 5;
 alert(result);
+
+// ----------------Task 6-------------------
+let d = 9;
+let e = 2;
+alert(`Остаток от деления = ${d % e}`);
+
