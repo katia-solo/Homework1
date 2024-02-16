@@ -10,4 +10,12 @@ if (userPassword === 'пароль') {
 
 // ----------------Task 2-------------------    
 let c = 7;
-console.log(c > 0 && c < 10 ? 'Верно' : 'Неверно');
+
+function checkNumber(c) {
+    console.log(c > 0 && c < 10 ? 'Верно' : 'Неверно');
+}
+checkNumber(0);
+checkNumber(10);
+checkNumber(-3);
+checkNumber(2);
+
