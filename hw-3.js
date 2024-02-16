@@ -29,4 +29,31 @@ let a = '2';
 let b = '3';
 alert(Number(a) + Number(b));
 
+// ----------------Task 5------------------- 
+let monthNumber = Number(prompt('Введите номер месяца в году'));
 
+switch (monthNumber) {
+    case 12:
+    case 1:
+    case 2:
+        console.log('зима');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log('весна');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log('лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log('осень');
+        break;
+    default:
+        console.log('Что-то пошло не так');
+        break;
+}
