@@ -19,3 +19,8 @@ checkNumber(10);
 checkNumber(-3);
 checkNumber(2);
 
+// ----------------Task 3-------------------  
+let d = 7;
+let e = 10;
+(d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
+
