@@ -21,6 +21,12 @@ checkNumber(2);
 
 // ----------------Task 3-------------------  
 let d = 7;
-let e = 10;
+let e = 101;
 (d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
+
+// ----------------Task 4-------------------  
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
+
 
