@@ -57,3 +57,17 @@ switch (monthNumber) {
         console.log('Что-то пошло не так');
         break;
 }
+
+// ----------------Task 7------------------- 
+let number = Number(prompt('Пожалуйста, введите любое число'));
+let ost = number % 2;
+if (!isNaN(number)) {
+    if (ost === 0) {
+        alert('Число четное');
+    } else {
+        alert('Число НЕчетное');
+    }
+} else {
+    alert('Вы ввели не число');
+}
+
