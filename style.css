@@ -120,6 +120,9 @@ body {
   }
   .head {
     height: 735px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .top {
     position: absolute;
@@ -145,6 +148,9 @@ body {
   }
   .gamescontent {
     height: 1221px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .games {
     flex-direction: column;

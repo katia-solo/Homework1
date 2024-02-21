@@ -6,6 +6,9 @@
 
     .head {
         height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .top {
@@ -39,6 +42,9 @@
 
     .gamescontent {
         height: 1221px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .games {
