@@ -10,3 +10,12 @@ for (let n = 1; n < 6; n++) {
     console.log(n);
 }
 
+// ----------------Task 3------------------- 
+
+let a = 7
+while (a < 23) {
+    console.log(a);
+    a++;
+}
+
+
