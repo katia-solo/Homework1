@@ -1,0 +1,53 @@
+@media (max-width: 735px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .head {
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top {
+        position: absolute;
+        // padding-left: 16px;
+        // padding-right: 16px;
+        // padding-top: 238.69px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: center;
+            padding-top: 238.69px;
+        }
+
+        &_text {
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &_link {
+            font-size: 14px;
+        }
+    }
+
+    .gamescontent {
+        height: 1221px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .games {
+        flex-direction: column;
+    }
+}
