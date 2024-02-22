@@ -6,8 +6,8 @@ for (let i = 0; i < 2; i++) {
 
 // ----------------Task 2------------------- 
 
-for (let n = 1; n < 6; n++) {
-    console.log(n);
+for (let e = 1; e < 6; e++) {
+    console.log(e);
 }
 
 // ----------------Task 3------------------- 
@@ -28,3 +28,15 @@ const obj = {
 for (const key in obj) {
     console.log(`${key} - зарплата ${obj[key]}`);
 }
+
+// ----------------Task 5------------------- 
+
+let n = 1000;
+let num = 0;
+
+for (; n >= 50; num++) {
+    n /= 2;
+}
+console.log(num);
+console.log(n);
+
