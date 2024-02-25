@@ -16,3 +16,14 @@ let isEven = (number) => {
 
 console.log(isEven(number));
 
+//-------------Task 3-------------------------
+
+let squaerNumber = (n) => n*=n;
+console.log(squaerNumber(5));
+
+let squaerNumber2 = (n) => {
+    let result = n*n;
+    return result;
+}
+console.log(squaerNumber2(5));
+
