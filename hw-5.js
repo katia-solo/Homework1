@@ -61,3 +61,28 @@ for (let i = 0; i <= 10; i++) {
   console.log(cubeNumber(i));
 }
 
+//-------------Task 7-------------------------
+
+function calсArea() {
+    return Math.PI * this.radius ** 2;
+}
+
+function calсPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 11,
+    getArea: calсArea,
+    getPerimeter: calсPerimeter,
+}
+
+const circle2 = {
+    radius: 20,
+    getArea: calсArea,
+    getPerimeter: calсPerimeter,
+}
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
