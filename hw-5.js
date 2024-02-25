@@ -42,3 +42,11 @@ let ageCheck = (age) => {
 }
 alert(ageCheck(age));
 
+//-------------Task 5-------------------------
+
+let checkNumbers = (a, b) => {
+    return isNaN(a) || isNaN(b) ? 'Одно или оба значения не являются числом': a * b;
+}
+console.log(checkNumbers(12, 7));
+console.log(checkNumbers('jhsgf', 8));
+
