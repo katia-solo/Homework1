@@ -50,3 +50,14 @@ let checkNumbers = (a, b) => {
 console.log(checkNumbers(12, 7));
 console.log(checkNumbers('jhsgf', 8));
 
+//-------------Task 6-------------------------
+
+function cubeNumber() {
+  let number = Number(prompt("Введите число:"));
+    return isNaN(number) ? 'Переданный параметр не является числом': `${number} в кубе равняется ${number**3}`;
+}
+
+for (let i = 0; i <= 10; i++) {
+  console.log(cubeNumber(i));
+}
+
