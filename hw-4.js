@@ -34,16 +34,23 @@ for (const key in obj) {
 let n = 1000;
 let num = 0;
 
-for (; n >= 50; num++) {
+// for (; n >= 50; num++) {
+//     n /= 2;
+// }
+while (n >= 50) {
     n /= 2;
+    num++;
 }
+
 console.log(num);
 console.log(n);
+
 
 // ----------------Task 6------------------- 
 
 let firstFriday = 3; // первая пятница месяца, можно изменять в зависимости от месяца
 
 for (let day = firstFriday; day <= 31; day += 7) {
-  console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
+    console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
+
