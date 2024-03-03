@@ -109,3 +109,9 @@ arrAny.reduce((prev, curr, index, arr) => {
     return curr;
 })
 
+//-------------------Task 11--------------------------
+
+const arrIntegers = [2, 6, 7, 8, 9, 1];
+const result = arrIntegers.map(item => (item * item));
+console.log(result);
+
