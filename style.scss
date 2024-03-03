@@ -99,7 +99,7 @@ body {
 
     &_img {
         border-radius: 19px;
-        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
+        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
         width: 100%;
         height: auto;
 
@@ -127,6 +127,44 @@ body {
         position: absolute;
         bottom: 32px;
         left: 32px;
+    }
+}
+
+.seasontop {
+    height: 800px;
+    background-image: url(./img/seasons.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seasons {
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+        color: white;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    &_text {
+        max-width: 584px;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 32px;
+        padding-bottom: 44px;
+    }
+
+    &_pic {
+        width: auto;
+        height: 333px;
     }
 }
 
