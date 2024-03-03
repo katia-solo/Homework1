@@ -9,3 +9,8 @@ for (let i = 0; i < numbers.length; i++) {
 
 //-------------------Task 2--------------------------
 
+const array = [1, 5, 4, 10, 0, 3];
+
+let position = array.indexOf(4);
+console.log(position);
+
