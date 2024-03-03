@@ -93,25 +93,20 @@ console.log(oneDimArray);
 
 const arrayAny = [2, 5, 8, 3, 6];
 
-//вариант 1
 for (let i = 0; i < arrayAny.length - 1; i++) { // Обратите внимание на array.length - 1, чтобы избежать выхода за пределы массива
     // Выводим сумму текущего и следующего элементов
     console.log(arrayAny[i] + arrayAny[i + 1]);
 }
 
-//вариант 2
-const arrAny = [2, 5, 8, 3, 6];
-
-arrAny.reduce((prev, curr, index, arr) => {
-    if (index < arr.length) {
-        console.log(prev + curr);
-    }
-    return curr;
-})
-
 //-------------------Task 11--------------------------
 
-const arrIntegers = [2, 6, 7, 8, 9, 1];
-const result = arrIntegers.map(item => (item * item));
+const integersArray = [2, 6, 7, 8, 9, 1];
+const result = integersArray.map(item => (item * item));
 console.log(result);
+
+//-------------------Task 12--------------------------
+
+const stringArray = ['this', 'is', 'strings'];
+const lengthsArray = stringArray.map(string => string.length);
+console.log(lengthsArray);
 
