@@ -59,8 +59,8 @@ console.log(mixArr);
 const guess = [9, 8, 7, 6, 5];
 let num = Number(prompt('Could you please guess the number in the array?'));
 
-if (guess.includes(num)) { 
-    alert("Right!"); 
+if (guess.includes(num)) {
+    alert("Right!");
 } else {
     alert("Wrong");
 }
@@ -70,3 +70,19 @@ if (guess.includes(num)) {
 let string = 'abcdef';
 const revString = string.split('').reverse().join('');
 console.log(revString);
+
+//-------------------Task 9--------------------------
+//вариант 1
+const arrayOne = [[1, 2, 3], [4, 5, 6]];
+
+// Выпрямление массива методом flat() - на 1 уровень глубины
+const arrayTwo = arrayOne.flat();
+console.log(arrayTwo);
+
+//вариант 2
+
+const twoDimArray = [[1, 2, 3], [4, 5, 6]];
+
+// Объединение массивов с помощью оператора spread - разворачивает сначало 0й, потом 1й
+const oneDimArray = [...twoDimArray[0], ...twoDimArray[1]];
+console.log(oneDimArray);
