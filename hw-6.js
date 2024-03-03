@@ -22,6 +22,7 @@ console.log(mass.join(' '));
 //-------------------Task 4--------------------------
 
 const multiArray = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
+
 //вариант 1
 // for (let i = 0; i < multiArray.length; i++) {
 //     // Сначала выводим в консоль индекс подмассива
@@ -31,6 +32,7 @@ const multiArray = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
 //         console.log(multiArray[i][j]);
 //     }
 // }
+
 //вариант 2
 console.log(JSON.stringify(multiArray));
 
@@ -39,3 +41,10 @@ console.log(JSON.stringify(multiArray));
 const addingElements = [1, 1, 1];
 addingElements.push(2, 2, 2);
 console.log(addingElements);
+
+//-------------------Task 6--------------------------
+
+const mixArr = [9, 8, 7, 'a', 6, 5];
+mixArr.sort().pop();
+console.log(mixArr);
+
