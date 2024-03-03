@@ -12,5 +12,6 @@ for (let i = 0; i < numbers.length; i++) {
 const array = [1, 5, 4, 10, 0, 3];
 
 let position = array.indexOf(4);
-console.log(position);
+console.log(`4 is located on position number ${position}`);
 
+//-------------------Task 2--------------------------
