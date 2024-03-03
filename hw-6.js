@@ -34,6 +34,8 @@ const multiArray = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
 // }
 
 //вариант 2
+
+// JSON.stringify преобразует массив (или любой другой объект JavaScript) в строку в формате JSON, что позволяет получить точное текстовое представление массива, включая скобки и структуру массива
 console.log(JSON.stringify(multiArray));
 
 //-------------------Task 5--------------------------
@@ -86,3 +88,24 @@ const twoDimArray = [[1, 2, 3], [4, 5, 6]];
 // Объединение массивов с помощью оператора spread - разворачивает сначало 0й, потом 1й
 const oneDimArray = [...twoDimArray[0], ...twoDimArray[1]];
 console.log(oneDimArray);
+
+//-------------------Task 10--------------------------
+
+const arrayAny = [2, 5, 8, 3, 6];
+
+//вариант 1
+for (let i = 0; i < arrayAny.length - 1; i++) { // Обратите внимание на array.length - 1, чтобы избежать выхода за пределы массива
+    // Выводим сумму текущего и следующего элементов
+    console.log(arrayAny[i] + arrayAny[i + 1]);
+}
+
+//вариант 2
+const arrAny = [2, 5, 8, 3, 6];
+
+arrAny.reduce((prev, curr, index, arr) => {
+    if (index < arr.length) {
+        console.log(prev + curr);
+    }
+    return curr;
+})
+
