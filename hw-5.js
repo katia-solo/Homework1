@@ -8,13 +8,12 @@ console.log(min(6, 6));
 
 //-------------Task 2-------------------------
 
-let number = Number(prompt('Введите любое число'));
-
-let isEven = (number) => {
+let isEven = () => {
+    let number = Number(prompt('Введите любое число'));
     return number % 2 === 0 ? 'Число четное' : 'Нечетное число';
 }
 
-console.log(isEven(number));
+console.log(isEven());
 
 //-------------Task 3-------------------------
 
@@ -29,9 +28,9 @@ console.log(squaerNumber2(5));
 
 //-------------Task 4-------------------------
 
-let age = Number(prompt('Сколько вам лет?'));
+let ageCheck = () => {
+    age = Number(prompt('Сколько вам лет?'));
 
-let ageCheck = (age) => {
     if (isNaN(age) || Math.sign(age) === -1) {
         return 'Вы ввели неправильное значение';
     } else if (age > 0 && age <= 12) {
@@ -40,12 +39,12 @@ let ageCheck = (age) => {
         return 'Добро пожаловать!';
     }
 }
-alert(ageCheck(age));
+alert(ageCheck());
 
 //-------------Task 5-------------------------
 
 let checkNumbers = (a, b) => {
-    return isNaN(a) || isNaN(b) ? 'Одно или оба значения не являются числом': a * b;
+    return isNaN(a) || isNaN(b) ? 'Одно или оба значения не являются числом' : a * b;
 }
 console.log(checkNumbers(12, 7));
 console.log(checkNumbers('jhsgf', 8));
@@ -53,12 +52,12 @@ console.log(checkNumbers('jhsgf', 8));
 //-------------Task 6-------------------------
 
 function cubeNumber() {
-  let number = Number(prompt("Введите число:"));
-    return isNaN(number) ? 'Переданный параметр не является числом': `${number} в кубе равняется ${number**3}`;
+    let number = Number(prompt("Введите число:"));
+    return isNaN(number) ? 'Переданный параметр не является числом' : `${number} в кубе равняется ${number ** 3}`;
 }
 
 for (let i = 0; i <= 10; i++) {
-  console.log(cubeNumber(i));
+    console.log(cubeNumber(i));
 }
 
 //-------------Task 7-------------------------
