@@ -58,8 +58,15 @@ console.log(mixArr);
 
 const guess = [9, 8, 7, 6, 5];
 let num = Number(prompt('Could you please guess the number in the array?'));
-if (guess.includes(num)) {
-    alert("Right!");
+
+if (guess.includes(num)) { 
+    alert("Right!"); 
 } else {
     alert("Wrong");
 }
+
+//-------------------Task 8--------------------------
+
+let string = 'abcdef';
+const revString = string.split('').reverse().join('');
+console.log(revString);
