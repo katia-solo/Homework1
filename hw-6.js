@@ -54,3 +54,12 @@ mixArray.sort().filter(lit => !isNaN(lit));
 // const filtArray = mixArray.filter(lit => !isNaN(lit));
 console.log(mixArr);
 
+//-------------------Task 7--------------------------
+
+const guess = [9, 8, 7, 6, 5];
+let num = Number(prompt('Could you please guess the number in the array?'));
+if (guess.includes(num)) {
+    alert("Right!");
+} else {
+    alert("Wrong");
+}
