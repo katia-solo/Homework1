@@ -43,8 +43,14 @@ addingElements.push(2, 2, 2);
 console.log(addingElements);
 
 //-------------------Task 6--------------------------
-
+//вариант 1
 const mixArr = [9, 8, 7, 'a', 6, 5];
 mixArr.sort().pop();
+console.log(mixArr);
+
+//вариант 2
+const mixArray = [9, 8, 7, 'a', 6, 5];
+mixArray.sort().filter(lit => !isNaN(lit));
+// const filtArray = mixArray.filter(lit => !isNaN(lit));
 console.log(mixArr);
 
