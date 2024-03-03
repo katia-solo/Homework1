@@ -122,3 +122,12 @@ const negativeNumbersArray = getNegativeNumbers(numbersArray);
 
 console.log(negativeNumbersArray);
 
+//-------------------Task 14--------------------------
+
+let newArr = new Array(10);
+for (let i = 0; i < newArr.length; i++) {
+    newArr[i] = Math.floor(Math.random() * 11);
+}
+const onlyEven = newArr.filter(item => item % 2 === 0);
+console.log(`Весь случайный массив: ${newArr}`);
+console.log(`Только четные числа: ${onlyEven}`);
