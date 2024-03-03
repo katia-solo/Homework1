@@ -131,3 +131,24 @@ for (let i = 0; i < newArr.length; i++) {
 const onlyEven = newArr.filter(item => item % 2 === 0);
 console.log(`Весь случайный массив: ${newArr}`);
 console.log(`Только четные числа: ${onlyEven}`);
+
+//-------------------Task 15--------------------------
+
+//Пишем функцию для создания произвольного числового массива с заданной длиной (если бы сообразила раньше, то использовала ее для задач 14 и 15)
+function createRandomArray(length) {
+    let randomArray = [];
+    // Используем цикл for для создания массива случайных чисел
+    for (let i = 0; i < length; i++) {
+        // Добавляем в массив случайное целое число от 0 до 10
+        randomArray[i] = Math.floor(Math.random() * 11);
+    }
+    return randomArray;
+}
+const numOfElements = 6; // Количество элементов в массиве
+const randomArray = createRandomArray(numOfElements); // Создание массива
+
+//Рассчет среднего - делим сумму на количество элементов в массиве
+let calculateAverage = (randomArray.reduce((acc, current) => acc + current, 0)) / numOfElements;
+
+console.log(randomArray); // Вывод массива в консоль
+console.log(calculateAverage); // Вывод среднего в консоль
