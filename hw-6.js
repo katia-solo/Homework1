@@ -14,4 +14,8 @@ const array = [1, 5, 4, 10, 0, 3];
 let position = array.indexOf(4);
 console.log(`4 is located on position number ${position}`);
 
-//-------------------Task 2--------------------------
+//-------------------Task 3--------------------------
+
+let mass = [1, 3, 5, 10, 20];
+console.log(mass.join(' '));
+
