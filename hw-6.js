@@ -110,3 +110,15 @@ const stringArray = ['this', 'is', 'strings'];
 const lengthsArray = stringArray.map(string => string.length);
 console.log(lengthsArray);
 
+//-------------------Task 13--------------------------
+
+function getNegativeNumbers(arr) {
+    return arr.filter(number => number < 0);
+}
+
+// Пример использования
+const numbersArray = [1, -2, 3, -4, 5, -6, -7];
+const negativeNumbersArray = getNegativeNumbers(numbersArray);
+
+console.log(negativeNumbersArray);
+
