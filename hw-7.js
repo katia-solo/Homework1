@@ -36,3 +36,20 @@ function randomNumberFrom1To10() {
     console.log(`Случайное число от 1 до 10: ${randomNumber}`);
 }
 randomNumberFrom1To10();
+
+//--------------Task 6--------------------
+function generateRandomArray(n) {
+    const length = Math.floor(n / 2); //Определяем длину массива
+    const randomArray = [];
+
+    for (let i = 0; i < length; i++) {
+        const randonNumber = Math.floor(Math.random() * (n + 1)); //Генерим целые числа от 0 до n
+        randomArray.push(randonNumber); //Добавляем их в пустой массив
+    }
+
+    return randomArray
+}
+
+// Пример использования функции
+const n = 20;
+console.log(generateRandomArray(n));
