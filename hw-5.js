@@ -6,6 +6,8 @@ let min = (a, b) => {
 console.log(min(8, 4));
 console.log(min(6, 6));
 
+// let min = (a, b) => return a < b ? a : b;
+
 //-------------Task 2-------------------------
 
 let isEven = () => {
@@ -29,7 +31,7 @@ console.log(squaerNumber2(5));
 //-------------Task 4-------------------------
 
 let ageCheck = () => {
-    age = Number(prompt('Сколько вам лет?'));
+    let age = Number(prompt('Сколько вам лет?'));
 
     if (isNaN(age) || Math.sign(age) === -1) {
         return 'Вы ввели неправильное значение';
