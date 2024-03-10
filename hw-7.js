@@ -53,3 +53,17 @@ function generateRandomArray(n) {
 // Пример использования функции
 const n = 20;
 console.log(generateRandomArray(n));
+
+//--------------Task 7--------------------
+function getRandomNumber(min, max) {
+    // Генерируем случайное число в диапазоне от min до max (включительно)
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+}
+
+// Пример использования функции
+const min = 10;
+const max = 20;
+const randomNum = getRandomNumber(min, max);
+console.log("Случайное число в диапазоне от", min, "до", max, ":", randomNum);
+
