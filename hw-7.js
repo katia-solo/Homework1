@@ -15,4 +15,11 @@ function filterByStartsWith(array, startString) {
 const array = ["apple", "banana", "Orange", "pineapple", "oracl"];
 const startString = "or";
 
-console.log(filterByStartsWith(array, startString)); // Выведет: ["Orange"]
+console.log(filterByStartsWith(array, startString));
+
+//--------------Task 3--------------------
+let num = 32.58884;
+
+console.log(`Меньшее целое: ${Math.floor(num)}`);
+console.log(`Большее целое: ${Math.ceil(num)}`);
+console.log(`Ближайшее целое: ${Math.round(num)}`);
