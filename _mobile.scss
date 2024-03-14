@@ -1,4 +1,4 @@
-@media (max-width: 735px) {
+@media (max-width: 767px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -83,5 +83,12 @@
             height: 236px;
             width: 100%;
         }
+    }
+
+    .wordstop {
+        height: 654px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }

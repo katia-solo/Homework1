@@ -147,7 +147,19 @@ body {
   height: 333px;
 }
 
-@media (max-width: 735px) {
+.wordstop {
+  height: 800px;
+  background-image: url(./img/seasons.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -219,5 +231,11 @@ body {
   .seasons_pic-img {
     height: 236px;
     width: 100%;
+  }
+  .wordstop {
+    height: 654px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
