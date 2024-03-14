@@ -73,7 +73,58 @@ console.log(today);
 
 //--------------Task 9--------------------
 const currentDate = new Date();
-//Прибавляем 73 дня к текущему дню
+// Прибавляем 73 дня к текущему дню
 currentDate.setDate(currentDate.getDate() + 73);
 console.log("Дата через 73 дня:", currentDate);
 
+//--------------Task 10--------------------
+
+// Вариант 1
+function formatRussianDate(date) {
+    // Массивы для русских названий месяцев и дней недели
+    const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+    const weekdays = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+
+    // Получаем компоненты даты
+    const day = date.getDate();
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    const weekday = weekdays[date.getDay()];
+
+    // Получаем компоненты времени
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    // Формируем строку с датой и временем
+    const formattedDate = `Дата: ${day} ${month} ${year} — это ${weekday}.
+    Время: ${hours}:${minutes}:${seconds}`;
+
+    return formattedDate;
+}
+
+// Пример использования функции
+const todayDate = new Date();
+console.log(formatRussianDate(todayDate));
+
+// Вариант 2
+function formatRussianDate2(date) {
+    // Получаем строку с датой в локальном формате
+    const dateStr = date.toLocaleDateString('ru-RU', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+        weekday: 'long'
+    });
+
+    // Получаем строку с временем в локальном формате
+    const timeStr = date.toLocaleTimeString('ru-RU');
+
+    // Формируем окончательную строку с датой и временем
+    const formattedDate = `Дата: ${dateStr} Время: ${timeStr}`;
+
+    return formattedDate;
+}
+
+// Пример использования функции
+console.log(formatRussianDate2(todayDate));
