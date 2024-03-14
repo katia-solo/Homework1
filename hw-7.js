@@ -67,3 +67,6 @@ const max = 20;
 const randomNum = getRandomNumber(min, max);
 console.log("Случайное число в диапазоне от", min, "до", max, ":", randomNum);
 
+//--------------Task 8--------------------
+let today = new Date();
+console.log(today);
