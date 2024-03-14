@@ -70,3 +70,10 @@ console.log("Случайное число в диапазоне от", min, "д
 //--------------Task 8--------------------
 let today = new Date();
 console.log(today);
+
+//--------------Task 9--------------------
+const currentDate = new Date();
+//Прибавляем 73 дня к текущему дню
+currentDate.setDate(currentDate.getDate() + 73);
+console.log("Дата через 73 дня:", currentDate);
+
