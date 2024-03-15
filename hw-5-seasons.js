@@ -19,3 +19,25 @@ document.getElementById("checkSeasonBtn").addEventListener("click", function () 
     let monthNumber = Number(prompt("Введите номер месяца (1-12):"));
     alert(getSeason(monthNumber));
 });
+
+function playGame() {
+    const words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    // Перемешиваем элементы массива
+    words.sort(() => Math.random() - 0.5);
+
+    // Выводим на экран перемешанные слова
+    alert("Запомните слова: " + words.join(', '));
+
+    // Запрашиваем у пользователя первое и последнее слова из массива
+    const firstWord = prompt("Введите первое слово из списка:");
+    const lastWord = prompt("Введите последнее слово из списка:");
+
+    // Проверяем, угадал ли пользователь
+    const isCorrect = firstWord.toLowerCase() === words[0].toLowerCase() && lastWord.toLowerCase() === words[words.length - 1].toLowerCase();
+
+    // Выводим на экран сообщение для пользователя
+    alert(isCorrect ? "Поздравляем! Вы угадали оба слова." : "К сожалению, вы ошиблись.");
+
+}
+
