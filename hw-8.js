@@ -40,6 +40,20 @@ const people2 = [
 
 console.log(filter(people2, isMale));
 
+//---------------------Task 3-----------------
+function printCurrentDate() {
+    const interval = setInterval(() => {
+        const today = new Date;
+        console.log(`Сегодня: ${today.toLocaleDateString()}`);
+    }, 3000);
+    setTimeout(() => {
+        console.log("30 секунд прошло!");
+        clearInterval(interval);
+    }, 30000);
+};
+
+printCurrentDate();
+
 // //---------------------Task 4-----------------
 // function delayForSecond(callback) {
 //     // Код писать можно только внутри этой функции
