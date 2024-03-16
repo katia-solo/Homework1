@@ -9,6 +9,36 @@ const people = [
 // Колбэк для sort
 console.log(people.sort((a, b) => a.age - b.age));
 
+//---------------------Task 2-----------------
+function isPositive(num) {
+    return num > 0;
+}
+function isMale(person) {
+    return person.gender === 'male';
+}
+function filter(arr, ruleFunction) {
+
+    const output = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (ruleFunction(arr[i])) {
+            output.push(arr[i]);
+        }
+    }
+
+    return output;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people2 = [
+    { name: 'Глеб', gender: 'male' },
+    { name: 'Анна', gender: 'female' },
+    { name: 'Олег', gender: 'male' },
+    { name: 'Оксана', gender: 'female' }
+];
+
+console.log(filter(people2, isMale));
 
 // //---------------------Task 4-----------------
 // function delayForSecond(callback) {
